@@ -1,3 +1,11 @@
 # Crack-Detection-for-Structural-Health-Monitoring-using-Deep-Learning
 
-Crack detection has vital importance for structural health monitoring and inspection. In this series of labs, you learn everything you need to efficiently build a classifier using a pre-trained model that would detect cracks in images of concrete. For problem formulation, we will denote images of cracked concrete as the positive class and images of concrete with no cracks as the negative class.
+Crack detection has vital importance for structural health monitoring and inspection. In this project I built a classifier using a pre-trained model that detected cracks in images of concrete. I denoted images of cracked concrete as the positive class and images of concrete with no cracks as the negative class.
+
+I trained and tested deep learning models using Keras and PyTorch modules to identify cracks in images of concrete.
+
+I implemented an image classifier using the VGG16 pre-trained model, adding one dense top layer, compiling with Adam optimization and a categorical cross-entropy loss function, and training the model across 2 epochs. It ended up performing at 99.6% accuracy on the test data.
+
+I also employed a ResNet50-based model which performed at 95.2% accuracy on the same test data, thus implying that VGG16's training is better suited for the task of identifying cracks in concrete.
+
+Dataset: https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DL0321EN/data/concrete_data_week4.zip
